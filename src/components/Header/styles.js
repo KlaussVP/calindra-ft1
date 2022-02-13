@@ -9,7 +9,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: start;
   align-items: center;
-  background: #2a9d909c;
+  background: #2a9d8f;
 
   h1 {
     font-weight: 700;
