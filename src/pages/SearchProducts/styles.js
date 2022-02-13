@@ -49,6 +49,7 @@ const SearchForm = styled.form`
 `;
 
 const Button = styled.button`
+  display: ${({ loading }) => loading ? "none" : "initial"};
   max-width: 180px;
   border-radius: 10px;
   border: none;

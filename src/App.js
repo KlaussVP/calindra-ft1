@@ -14,10 +14,9 @@ export default function App() {
     <Router>
       <SearchProvider>
         <Header />
-        <SearchProducts />
-        {/* <Routes>
-          <Route path="/" element={SearchProducts}/>
-        </Routes> */}
+        <Routes>
+          <Route path="/" element={<SearchProducts />}/>
+        </Routes>
       </SearchProvider>
     </Router>
   );

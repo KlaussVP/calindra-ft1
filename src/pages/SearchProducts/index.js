@@ -1,19 +1,26 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 import { Button, MainContainer, SearchBox, SearchForm } from "./styles";
+import SearchContext from "../../context/SearchContext";
+import Loading from "../../components/Loading";
 
 export default function SearchProducts() {
   const [product, setProduct] = useState("");
   const [loading, setLoading] = useState(false);
+  const { setProducts } = useContext(SearchContext);
 
   function handleSubmition(e) {
     e.preventDefault();
     setLoading(true);
-    console.log(product);
     
     // axios.get("https://mystique-v2-americanas.juno.b2w.io/autocomplete?content=camiseta&source=nanook")
     // .then((resp) => {
-    //   console.log(resp.data);
+    //   setProducts(resp.data.products);
+    // })
+    // .catch(error => {
+    //   if(error) {
+    //     alert("Produto não encontrado.");
+    //   }
     // });
   }
 
@@ -25,7 +32,10 @@ export default function SearchProducts() {
           <label for="product">Digite o produto:</label>
           <input type="search" id="product" name="product" value={product} 
           onChange={(e) => setProduct(e.target.value)} placeholder="Encontre o produto" required/>
-          <Button>Buscar</Button>
+          { loading 
+            ? <Loading />
+            : <Button loading={loading}>Buscar</Button>
+          }
         </SearchForm>
       </SearchBox>
     </MainContainer>
