@@ -12,9 +12,10 @@ export default function App() {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" component={SearchProducts} />
-      </Routes>
+      <SearchProducts />
+      {/* <Routes>
+        <Route path="/" element={SearchProducts}/>
+      </Routes> */}
     </Router>
   );
 }
