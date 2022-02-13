@@ -3,12 +3,15 @@ body {
   background: #264653;
 }
 
-/*
-SCSS RGB
+/*SCSS RGB
 
-$charcoal: #264653;
-$persian-green: #2a9d8f;
-$maize-crayola: #e9c46a;
-$sandy-brown: #f4a261;
-$burnt-sienna: #e76f51;
+.class {
+  color: #264653;
+  color: #2a9d8f;
+  color: #2a9d909c;
+  color: #e9c46a;
+  color: #f4a261;
+  color: #e76f51;
+}
+
 */
