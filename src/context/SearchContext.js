@@ -5,10 +5,16 @@ export default SearchContext;
 
 export function SearchProvider({ children }) {
   const [products, setProducts] = useState([]);
+  const [suggestions, setSuggestions] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
   const value = {
     products,
-    setProducts
+    setProducts,
+    suggestions,
+    setSuggestions,
+    filteredProducts,
+    setFilteredProducts
   }
 
   return (

@@ -8,7 +8,7 @@ import Loading from "../../components/Loading";
 export default function SearchProducts() {
   const [product, setProduct] = useState("");
   const [loading, setLoading] = useState(false);
-  const { setProducts } = useContext(SearchContext);
+  const { setProducts, setSuggestions } = useContext(SearchContext);
   let navigate = useNavigate();
 
   function handleChange(e) {
@@ -39,7 +39,8 @@ export default function SearchProducts() {
     axios.get("https://mystique-v2-americanas.juno.b2w.io/autocomplete?content=camiseta&source=nanook")
     .then((resp) => {
       setLoading(false);
-      setProducts(checkProduct(resp.data.products)); 
+      setProducts(checkProduct(resp.data.products));
+      setSuggestions(resp.data.suggestions);
       navigate("/products");
     })
     .catch(error => {

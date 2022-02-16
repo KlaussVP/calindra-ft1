@@ -4,8 +4,8 @@ import SearchContext from "../../context/SearchContext";
 import FilterSearch from "../../utils/FilterSearch";
 import { ProductsContainer, NotFoundContainer, ProductsList, ProductsTable, EachProduct, EachPontuation, Suggestions } from "./styles";
 
-export default function Products() {
-  const { products, suggestions, setFilteredProducts } = useContext(SearchContext);
+export default function FilteredProducts() {
+  const { products, filteredProducts, suggestions, setFilteredProducts } = useContext(SearchContext);
   let navigate = useNavigate();
 
   function handleClik(e) {
@@ -20,7 +20,7 @@ export default function Products() {
 
   return (
     <ProductsContainer>
-      { products.length === 0 
+      { filteredProducts.length === 0 
         ? (
           <NotFoundContainer>
             <p>Produto não encontrado.</p>
@@ -34,7 +34,7 @@ export default function Products() {
             <ProductsTable>
               <div className="title">Produto</div>
               <div className="title">Pontuação</div>
-              {products.map(p => (
+              {filteredProducts.map(p => (
                 <>
                   <EachProduct>
                     <p className="name">{p.name}</p>
