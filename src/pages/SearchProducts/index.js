@@ -57,9 +57,9 @@ export default function SearchProducts() {
       <SearchBox>
         <h1>Busque seu produto</h1>
         <SearchForm onSubmit={handleSubmition}>
-          <label for="product">Digite o produto:</label>
+          <label htmlFor="product">Digite o produto:</label>
           <input type="search" id="product" name="product" value={product} 
-          onChange={handleChange} placeholder="Ex.: camisas" required/>
+          onChange={handleChange} placeholder="Ex.: camiseta" required/>
           { loading 
             ? <Loading />
             : <Button loading={loading}>Buscar</Button>
