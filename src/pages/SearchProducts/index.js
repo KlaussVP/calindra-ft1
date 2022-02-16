@@ -11,23 +11,44 @@ export default function SearchProducts() {
   const { setProducts } = useContext(SearchContext);
   let navigate = useNavigate();
 
+  function handleChange(e) {
+    if (e.target.value !== "") {
+      let firstCapsLetter = e.target.value[0].toUpperCase();
+      setProduct(firstCapsLetter + e.target.value.substring(1));
+    } else {
+      setProduct(e.target.value);
+    }
+  }
+
+  function checkProduct(productsList) {
+    let filteredP = [];
+
+    for (const element in productsList) {
+      if (productsList[element].name.includes(product)) {
+        filteredP.push(productsList[element]);
+      }
+    }
+
+    return filteredP;
+  }
+
   function handleSubmition(e) {
     e.preventDefault();
     setLoading(true);
     
     axios.get("https://mystique-v2-americanas.juno.b2w.io/autocomplete?content=camiseta&source=nanook")
     .then((resp) => {
-      console.log(resp.data);
-      setProducts(resp.data.products);
+      setLoading(false);
+      setProducts(checkProduct(resp.data.products)); 
       navigate("/products");
     })
     .catch(error => {
       if(error) {
+        console.log(error);
+        setLoading(false);
         alert("Produto não encontrado.");
       }
     });
-
-    setLoading(false);
   }
 
   return (
@@ -37,7 +58,7 @@ export default function SearchProducts() {
         <SearchForm onSubmit={handleSubmition}>
           <label for="product">Digite o produto:</label>
           <input type="search" id="product" name="product" value={product} 
-          onChange={(e) => setProduct(e.target.value)} placeholder="Ex.: camisas" required/>
+          onChange={handleChange} placeholder="Ex.: camisas" required/>
           { loading 
             ? <Loading />
             : <Button loading={loading}>Buscar</Button>
