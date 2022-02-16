@@ -13,7 +13,7 @@ const HeaderContainer = styled.header`
 
   h1 {
     font-weight: 700;
-    color: #f4a261;
+    color: #000;
   }
 `;
 
