@@ -8,7 +8,7 @@
 
 ## About
 <p>
-  This project's only purpose is to respond to the challenge made by Calindra through an interview process. It`s an interface that allows you to search for products from a given API and returns those products in a table.
+  This project's only purpose is to respond to the challenge made by Calindra through an interview process. It`s an interface that allows you to search for products from a <a href="https://mystique-v2-americanas.juno.b2w.io/autocomplete?content=camiseta&source=nanook">given API</a> and returns those products in a table.
 </p>
 
 <p align="center"><img src="public/images/processing.gif" width="80px"/></p>
