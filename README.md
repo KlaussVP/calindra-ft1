@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/search.gif" width="310" alt="Calindra-ft1" />
+  <img src="public/images/search.gif" alt="Calindra-ft1" />
 </p>
 
 # Calindra-ft1
@@ -8,10 +8,10 @@
 
 ## About
 <p>
-  This project's only purpose is to respond to the challenge made by Calindra through an interview process.
+  This project's only purpose is to respond to the challenge made by Calindra through an interview process. It`s an interface that allows you to search for products from a given API and returns those products in a table.
 </p>
 
-<p align="center"><img src="public/images/processing.gif"/></p>
+<p align="center"><img src="public/images/processing.gif" width="80px"/></p>
 
 <br><br>
 
@@ -47,19 +47,21 @@ Languages:<br>
   <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
   <img src="https://img.shields.io/badge/jsx%20-%23323330.svg?&style=for-the-badge&logo=react&logoColor=%23F7DF1E"/>
 </p>
-
-The following tools were used in the construction of the project:
+<br>
 
 The following tools and frameworks were used in the construction of the project:<br>
 <p align="center">
+  <img style='margin: 5px;' src='https://badges.aleen42.com/src/npm.svg'>
+  <img style='margin: 5px;' src='https://badges.aleen42.com/src/webpack.svg'>
   <img style='margin: 5px;' src='https://img.shields.io/badge/styled-components%20-%2320232a.svg?&style=for-the-badge&color=b8679e&logo=styled-components&logoColor=%3a3a3a'>
   <img style='margin: 5px;' src='https://img.shields.io/badge/axios%20-%2320232a.svg?&style=for-the-badge&color=informational'>
   <img style='margin: 5px;' src='https://img.shields.io/badge/babel%20-%2320232a.svg?&style=for-the-badge&color=323230&logo=babel&logoColor=%f4dc4e'>
-  <img style='margin: 5px;' src="https://img.shields.io/badge/react-app%20-%2320232a.svg?&style=for-the-badge&color=60ddf9&logo=react&logoColor=%2361DAFB"/>
+  <img style='margin: 5px;' src="https://badges.aleen42.com/src/react.svg"/>
   <img style='margin: 5px;' src="https://img.shields.io/badge/react_route%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
   <img style='margin: 5px;' src='https://img.shields.io/badge/react-icons%20-%2320232a.svg?&style=for-the-badge&color=f28dc7&logo=react-icons&logoColor=%2361DAFB'>
 </p>
 <br>
+
 Version Control:<br>
 <p align="center">
   <img src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white"/>
@@ -70,7 +72,7 @@ Version Control:<br>
 
 ### Deploy
 
-The application layout is available on VercelApp: [Calindra-ft1](https://calindra-ft1-h96bpnsio-klaussvp.vercel.app/)
+The application is available on VercelApp: [Calindra-ft1](https://calindra-ft1-h96bpnsio-klaussvp.vercel.app/)
 
 <br><br>
 ## Contributors
