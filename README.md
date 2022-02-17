@@ -70,7 +70,7 @@ Version Control:<br>
 
 ### Deploy
 
-The application layout is available on VercelApp: [Calindra-ft1](https://codify-frontend.herokuapp.com/)
+The application layout is available on VercelApp: [Calindra-ft1](https://calindra-ft1-h96bpnsio-klaussvp.vercel.app/)
 
 <br><br>
 ## Contributors
